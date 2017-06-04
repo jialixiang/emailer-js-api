@@ -1,0 +1,18 @@
+{
+  "name": "emailer-js-api",
+  "version": "1.0.0",
+  "description": "a RESTful API that accepts the necessary information and sends emails via the `emailer-js` npm package",
+  "main": "server.js",
+  "dependencies": {
+    "emailer-js": "1.0.0",
+    "express" : "4.15.3",
+    "body-parser": "1.17.2"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amanda Xiang",
+  "license": "ISC"
+}

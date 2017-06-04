@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Email Service API</title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home<span class="sr-only">(current)</span></a></li>
+            <li><a href="/send-email">Send Email</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="jumbotron" style="padding:10px;">
+        <h4>Email Service API to send email using following services:</h4>
+        <li>SendGrid</li>
+        <li>Mailgun</li>
+        <li>Amazon SES</li>
+        <br />
+        If one of the services goes down, it can quickly failover to a another provider without affecting your customers.
+        <br />
+        <h5>Other services to be added later:</h5>
+        <li>Mandrill</li>
+        <li>...</li>
+      </div>
+    </div>
+  </body>
+
+</html>
