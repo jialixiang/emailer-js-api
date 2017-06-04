@@ -26,6 +26,7 @@ router.get('/send-email', (req, res) => {
 
 router.post('/send-email', (req, res) => {
 
+  // Get data from email form and then send email
   let options = {
     fromEmail: req.body.from,
     toEmail: req.body.to,
@@ -33,17 +34,20 @@ router.post('/send-email', (req, res) => {
     content: req.body.content
   };
 
+  // TODO: show email sending status?
   let emailer = new Emailer();
   emailer.handleSendEmail(options);
 
 });
 
-app.use('/',router);
+app.use('/', router);
 
 app.use('*', (req, res) => {
   res.sendFile(path + '404.html');
 });
 
-app.listen(3000, () => {
+let server = app.listen(3000, () => {
   console.log('Live at Port 3000');
 });
+
+module.exports = server;
