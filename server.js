@@ -36,9 +36,9 @@ router.post('/send-email', (req, res) => {
 
   let emailer = new Emailer();
   emailer.sendEmail(options).then(val => {
-    res.send(200, val);
+    res.send(200, 'succeeded');
   }, err => {
-    res.send(200, err);
+    res.send(200, 'failed');
   });
 
 });

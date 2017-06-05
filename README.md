@@ -42,7 +42,7 @@ npm install --save emailer-js-api
 
 ## Running the tests
 
-You need to set the NODE_ENV environment variable to test and install devDependencies before you run test
+You need to set the NODE_ENV environment variable to 'test' and install devDependencies before you run test
 
 ```
 npm test
@@ -60,7 +60,7 @@ Click "Send Email" on nav menu
 
 Input correct email information then click "Send" button
 
-<img src="https://cloud.githubusercontent.com/assets/4859095/26797583/eebe3170-4a5f-11e7-844c-6b40a25d5a05.png" width="200">
+<img src="https://cloud.githubusercontent.com/assets/4859095/26797583/eebe3170-4a5f-11e7-844c-6b40a25d5a05.png" width="400">
 
 ## TODO
 
