@@ -34,9 +34,12 @@ router.post('/send-email', (req, res) => {
     content: req.body.content
   };
 
-  // TODO: show email sending status?
   let emailer = new Emailer();
-  emailer.handleSendEmail(options);
+  emailer.sendEmail(options).then(val => {
+    res.send(200, val);
+  }, err => {
+    res.send(200, err);
+  });
 
 });
 
