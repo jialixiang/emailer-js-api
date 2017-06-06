@@ -1,10 +1,10 @@
 {
   "name": "emailer-js-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a RESTful API that accepts the necessary information and sends emails via the `emailer-js` npm package",
   "main": "server.js",
   "dependencies": {
-    "emailer-js": "1.0.1",
+    "emailer-js": "*",
     "express" : "4.15.3",
     "body-parser": "1.17.2"
   },
